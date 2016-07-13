@@ -1,0 +1,11 @@
+[t3]
+FileName1=t3_actions.html
+URL1=http://btags.sndbx.junipercloud.net:8000/tags/actions
+Total=1
+ContentType=text/javascript
+SnapshotXmlFile=snapshot_3.xml
+RequestHeaderFile=t3_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t3_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

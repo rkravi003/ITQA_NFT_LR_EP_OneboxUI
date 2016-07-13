@@ -1,0 +1,11 @@
+[t2]
+FileName1=t2_onebox.xml
+URL1=http://gsainternalsearch-env.us-west-2.elasticbeanstalk.com/rest/onebox?query=teamsite
+Total=1
+ContentType=application/xml
+SnapshotXmlFile=snapshot_2.xml
+RequestHeaderFile=t2_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t2_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

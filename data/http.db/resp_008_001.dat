@@ -1,0 +1,251 @@
+
+/*
+Patterns to be matched:
+email
+case
+INC
+PRB
+CHG
+CTASK
+RITM
+TASK
+PRJ
+PRJTASK
+Routing Products
+*/
+function action(type, ID, match)
+{
+	console.log("this is from server @@@type, ID, match   "+type+"  @@@   "+ID+"  @@@  "+match);
+	switch(type)
+	{
+		case "email":
+			switch(true)
+			{
+				case (/email-\d+-item-1/).test(ID):
+					window.open("http://find.juniper.net/search?q="+match.replace(' ','+')+"&btnG=Search&client=internal_search_frontend&proxystylesheet=internal_search_frontend&filter=0&ulang=en&sort=date%3AD%3AL%3Ad1&entqrm=0&entsp=a__juniper_policy&oe=UTF-8&ie=UTF-8&ud=1&exclude_apps=1&site=default_collection");
+					break;
+				case (/email-\d+-item-2/).test(ID):
+					window.open("mailto:"+match,"_self");
+					break;
+			}
+			break
+		case "case":
+			switch(true)
+			{
+				case (/case-\d+-item-1/).test(ID):
+					window.open("http://find.juniper.net/search?q="+match.replace(' ','+')+"&btnG=Search&client=internal_search_frontend&proxystylesheet=internal_search_frontend&filter=0&ulang=en&sort=date%3AD%3AL%3Ad1&entqrm=0&entsp=a__juniper_policy&oe=UTF-8&ie=UTF-8&ud=1&exclude_apps=1&site=default_collection");
+					break;
+				case (/case-\d+-item-2/).test(ID):
+					window.open("https://cmstage.juniper.net/casemanager/cmdetails/"+match);
+					break;
+				/*case (/case-\d+-item-3/).test(ID):
+					alert("Escalate "+match);
+					break;
+				case (/case-\d+-item-4/).test(ID):
+					alert("View "+match);
+					break;
+				*/
+			}
+			break
+		case "inc":
+			switch(true)
+			{
+				case (/inc-\d+-item-1/).test(ID):
+					window.open("http://find.juniper.net/search?q="+match.replace(' ','+')+"&btnG=Search&client=internal_search_frontend&proxystylesheet=internal_search_frontend&filter=0&ulang=en&sort=date%3AD%3AL%3Ad1&entqrm=0&entsp=a__juniper_policy&oe=UTF-8&ie=UTF-8&ud=1&exclude_apps=1&site=default_collection");
+					break;
+				case (/inc-\d+-item-2/).test(ID):
+					window.open("https://cmstage.juniper.net/casemanager/cmdetails/"+match);
+					break;
+				/*case (/inc-\d+-item-3/).test(ID):
+					alert("Escalate incident "+match);
+					break;
+				case (/inc-\d+-item-4/).test(ID):
+					alert("Clone incident "+match);
+					break;
+				*/
+			}
+			break
+		case "prb":
+			switch(true)
+			{
+				case (/prb-\d+-item-1/).test(ID):
+					window.open("http://find.juniper.net/search?q="+match.replace(' ','+')+"&btnG=Search&client=internal_search_frontend&proxystylesheet=internal_search_frontend&filter=0&ulang=en&sort=date%3AD%3AL%3Ad1&entqrm=0&entsp=a__juniper_policy&oe=UTF-8&ie=UTF-8&ud=1&exclude_apps=1&site=default_collection");
+					break;
+				case (/prb-\d+-item-2/).test(ID):
+					window.open("https://cmstage.juniper.net/casemanager/cmdetails/"+match);
+					break;
+			}
+			break
+		case "mx":
+			switch(true)
+			{
+				case (/mx-\d+-item-1/).test(ID):
+					window.open("http://find.juniper.net/search?q="+match.replace(' ','+')+"&btnG=Search&client=internal_search_frontend&proxystylesheet=internal_search_frontend&filter=0&ulang=en&sort=date%3AD%3AL%3Ad1&entqrm=0&entsp=a__juniper_policy&oe=UTF-8&ie=UTF-8&ud=1&exclude_apps=1&site=default_collection");
+					break;
+				case (/mx-\d+-item-2/).test(ID):
+					//window.open("https://cmstage.juniper.net/casemanager/cmdetails/"+match);
+					//window.open("https://juniper.gosavo.com/CustomPage/View.aspx?id=32698496");
+					window.open("https://juniper.gosavo.com/CustomPage/View.aspx?id=32698496");
+					break;
+			}
+		case "acx":
+			switch(true)
+			{
+				case (/acx-\d+-item-1/).test(ID):
+					window.open("http://find.juniper.net/search?q="+match.replace(' ','+')+"&btnG=Search&client=internal_search_frontend&proxystylesheet=internal_search_frontend&filter=0&ulang=en&sort=date%3AD%3AL%3Ad1&entqrm=0&entsp=a__juniper_policy&oe=UTF-8&ie=UTF-8&ud=1&exclude_apps=1&site=default_collection");
+					break;
+				case (/acx-\d+-item-2/).test(ID):
+					//window.open("https://cmstage.juniper.net/casemanager/cmdetails/"+match);
+					//window.open("https://juniper.gosavo.com/CustomPage/View.aspx?id=32698496");
+					window.open("https://juniper.gosavo.com/CustomPage/View.aspx?id=32984472");
+					break;
+			}
+		case "ptx":
+			switch(true)
+			{
+				case (/ptx-\d+-item-1/).test(ID):
+					window.open("http://find.juniper.net/search?q="+match.replace(' ','+')+"&btnG=Search&client=internal_search_frontend&proxystylesheet=internal_search_frontend&filter=0&ulang=en&sort=date%3AD%3AL%3Ad1&entqrm=0&entsp=a__juniper_policy&oe=UTF-8&ie=UTF-8&ud=1&exclude_apps=1&site=default_collection");
+					break;
+				case (/ptx-\d+-item-2/).test(ID):
+					//window.open("https://cmstage.juniper.net/casemanager/cmdetails/"+match);
+					//window.open("https://juniper.gosavo.com/CustomPage/View.aspx?id=32698496");
+					window.open("https://juniper.gosavo.com/CustomPage/View.aspx?id=32983559");
+					break;
+			}
+		case "t":
+			switch(true)
+			{
+				case (/t-\d+-item-1/).test(ID):
+					window.open("http://find.juniper.net/search?q="+match.replace(' ','+')+"&btnG=Search&client=internal_search_frontend&proxystylesheet=internal_search_frontend&filter=0&ulang=en&sort=date%3AD%3AL%3Ad1&entqrm=0&entsp=a__juniper_policy&oe=UTF-8&ie=UTF-8&ud=1&exclude_apps=1&site=default_collection");
+					break;
+				case (/t-\d+-item-2/).test(ID):
+					//window.open("https://cmstage.juniper.net/casemanager/cmdetails/"+match);
+					//window.open("https://juniper.gosavo.com/CustomPage/View.aspx?id=32698496");
+					window.open("https://juniper.gosavo.com/CustomPage/View.aspx?id=32983559");
+					break;
+			}	
+			break
+		case "chg":
+			switch(true)
+			{
+				case (/chg-\d+-item-1/).test(ID):
+					window.open("http://find.juniper.net/search?q="+match.replace(' ','+')+"&btnG=Search&client=internal_search_frontend&proxystylesheet=internal_search_frontend&filter=0&ulang=en&sort=date%3AD%3AL%3Ad1&entqrm=0&entsp=a__juniper_policy&oe=UTF-8&ie=UTF-8&ud=1&exclude_apps=1&site=default_collection");
+					break;
+				case (/chg-\d+-item-2/).test(ID):
+					window.open("https://cmstage.juniper.net/casemanager/cmdetails/"+match);
+					break;
+			}
+			break
+		case "ctask":
+			switch(true)
+			{
+				case (/ctask-\d+-item-1/).test(ID):
+					window.open("http://find.juniper.net/search?q="+match.replace(' ','+')+"&btnG=Search&client=internal_search_frontend&proxystylesheet=internal_search_frontend&filter=0&ulang=en&sort=date%3AD%3AL%3Ad1&entqrm=0&entsp=a__juniper_policy&oe=UTF-8&ie=UTF-8&ud=1&exclude_apps=1&site=default_collection");
+					break;
+				case (/ctask-\d+-item-2/).test(ID):
+					window.open("https://cmstage.juniper.net/casemanager/cmdetails/"+match);
+					break;
+			}
+			break
+		case "ritm":
+			switch(true)
+			{
+				case (/ritm-\d+-item-1/).test(ID):
+					window.open("http://find.juniper.net/search?q="+match.replace(' ','+')+"&btnG=Search&client=internal_search_frontend&proxystylesheet=internal_search_frontend&filter=0&ulang=en&sort=date%3AD%3AL%3Ad1&entqrm=0&entsp=a__juniper_policy&oe=UTF-8&ie=UTF-8&ud=1&exclude_apps=1&site=default_collection");
+					break;
+				case (/ritm-\d+-item-2/).test(ID):
+					window.open("https://cmstage.juniper.net/casemanager/cmdetails/"+match);
+					break;
+			}
+			break
+		case "task":
+			switch(true)
+			{
+				case (/task-\d+-item-1/).test(ID):
+					window.open("http://find.juniper.net/search?q="+match.replace(' ','+')+"&btnG=Search&client=internal_search_frontend&proxystylesheet=internal_search_frontend&filter=0&ulang=en&sort=date%3AD%3AL%3Ad1&entqrm=0&entsp=a__juniper_policy&oe=UTF-8&ie=UTF-8&ud=1&exclude_apps=1&site=default_collection");
+					break;
+				case (/task-\d+-item-2/).test(ID):
+					alert("View task "+match);
+					break;
+			}
+			break
+		case "prj":
+			switch(true)
+			{
+				case (/prj-\d+-item-1/).test(ID):
+					window.open("http://find.juniper.net/search?q="+match.replace(' ','+')+"&btnG=Search&client=internal_search_frontend&proxystylesheet=internal_search_frontend&filter=0&ulang=en&sort=date%3AD%3AL%3Ad1&entqrm=0&entsp=a__juniper_policy&oe=UTF-8&ie=UTF-8&ud=1&exclude_apps=1&site=default_collection");
+					break;
+				case (/prj-\d+-item-2/).test(ID):
+					alert("View PRJ "+match);
+					break;
+			}
+			break
+		case "prjtask":
+			switch(true)
+			{
+				case (/prjtask-\d+-item-1/).test(ID):
+					window.open("http://find.juniper.net/search?q="+match.replace(' ','+')+"&btnG=Search&client=internal_search_frontend&proxystylesheet=internal_search_frontend&filter=0&ulang=en&sort=date%3AD%3AL%3Ad1&entqrm=0&entsp=a__juniper_policy&oe=UTF-8&ie=UTF-8&ud=1&exclude_apps=1&site=default_collection");
+					break;
+				case (/prjtask-\d+-item-2/).test(ID):
+					alert("View PRJTASK "+match);
+					break;
+			}
+			break
+		case "ex":
+			switch(true)
+			{
+				case (/ex-\d+-item-1/).test(ID):
+					window.open("http://find.juniper.net/search?q="+match.replace(' ','+')+"&btnG=Search&client=internal_search_frontend&proxystylesheet=internal_search_frontend&filter=0&ulang=en&sort=date%3AD%3AL%3Ad1&entqrm=0&entsp=a__juniper_policy&oe=UTF-8&ie=UTF-8&ud=1&exclude_apps=1&site=default_collection");
+					break;
+				case (/ex-\d+-item-2/).test(ID):
+					window.open("https://juniper.gosavo.com/CustomPage/View.aspx?id=32986869");
+					break;
+			}
+			break
+		case "qfx":
+			switch(true)
+			{
+				case (/qfx-\d+-item-1/).test(ID):
+					window.open("http://find.juniper.net/search?q="+match.replace(' ','+')+"&btnG=Search&client=internal_search_frontend&proxystylesheet=internal_search_frontend&filter=0&ulang=en&sort=date%3AD%3AL%3Ad1&entqrm=0&entsp=a__juniper_policy&oe=UTF-8&ie=UTF-8&ud=1&exclude_apps=1&site=default_collection");
+					break;
+				case (/qfx-\d+-item-2/).test(ID):
+					window.open("https://juniper.gosavo.com/CustomPage/View.aspx?id=33318605");
+					break;
+			}
+			break
+		case "srxlow":
+			switch(true)
+			{
+				case (/srxlow-\d+-item-1/).test(ID):
+					window.open("http://find.juniper.net/search?q="+match.replace(' ','+')+"&btnG=Search&client=internal_search_frontend&proxystylesheet=internal_search_frontend&filter=0&ulang=en&sort=date%3AD%3AL%3Ad1&entqrm=0&entsp=a__juniper_policy&oe=UTF-8&ie=UTF-8&ud=1&exclude_apps=1&site=default_collection");
+					break;
+				case (/srxlow-\d+-item-2/).test(ID):
+					window.open("https://juniper.gosavo.com/CustomPage/View.aspx?id=33240907");
+					break;
+			}
+			break
+		case "srxmid":
+			switch(true)
+			{
+				case (/srxmid-\d+-item-1/).test(ID):
+					window.open("http://find.juniper.net/search?q="+match.replace(' ','+')+"&btnG=Search&client=internal_search_frontend&proxystylesheet=internal_search_frontend&filter=0&ulang=en&sort=date%3AD%3AL%3Ad1&entqrm=0&entsp=a__juniper_policy&oe=UTF-8&ie=UTF-8&ud=1&exclude_apps=1&site=default_collection");
+					break;
+				case (/srxmid-\d+-item-2/).test(ID):
+					window.open("https://juniper.gosavo.com/CustomPage/View.aspx?id=34641758");
+					break;
+			}
+			break
+		case "srxhigh":
+			switch(true)
+			{
+				case (/srxhigh-\d+-item-1/).test(ID):
+					window.open("http://find.juniper.net/search?q="+match.replace(' ','+')+"&btnG=Search&client=internal_search_frontend&proxystylesheet=internal_search_frontend&filter=0&ulang=en&sort=date%3AD%3AL%3Ad1&entqrm=0&entsp=a__juniper_policy&oe=UTF-8&ie=UTF-8&ud=1&exclude_apps=1&site=default_collection");
+					break;
+				case (/srxhigh-\d+-item-2/).test(ID):
+					window.open("https://juniper.gosavo.com/CustomPage/View.aspx?id=32987880");
+					break;
+			}
+			break
+			
+	}
+}
