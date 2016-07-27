@@ -14,7 +14,7 @@ GlobalDir=
 }
 
 {ScenarioPrivateConfig
-Path=C:\Github\onebox_LT_scripts\Scenario1.lrs
+Path=C:\Users\rkravi\.jenkins\jobs\oneboxapi\workspace\Scenario1.lrs
 Author=rkravi
 Subject=Scenario1
 Description=
@@ -1129,7 +1129,7 @@ Auto_Y_Scale=1
 DefaultMsrAutoScale=0
 Granularities=-1
 MeasurementCount=0
-Description=Displays the number of attempted server connections during each second of the scenario run. A server connection is retried when the initial connection was unauthorized, when proxy authentication is required, when the initial connection was closed by the server, when the initial connection to the server could not be made, or when the server was initially unable to resolve the load generator’s IP address.
+Description=Displays the number of attempted server connections during each second of the scenario run. A server connection is retried when the initial connection was unauthorized, when proxy authentication is required, when the initial connection was closed by the server, when the initial connection to the server could not be made, or when the server was initially unable to resolve the load generatorÂ’s IP address.
 [20]
 MeasurementsDelimiter=|||
 HelpContext=566
@@ -4261,96 +4261,186 @@ XMLData=<Mediators distribution = "1" enabled= "1" ><Mediator type= "SARM" enabl
 }
 
 {ScenarioSchedulerConfig
-<?xml version="1.0" encoding="utf-16"?>
-<LoadTest>
-  <Schedulers>
-    <CurrentSchedulerId>1</CurrentSchedulerId>
-    <StartMode>
-      <StartModeType>Immediately</StartModeType>
-      <StartModes>
-        <Immediately />
-        <DelayAfterLTStart>0</DelayAfterLTStart>
-        <StartAt>2016-07-13T09:48:32.4695637+05:30</StartAt>
-      </StartModes>
-    </StartMode>
-    <Scheduler ID="1">
-      <Name>Schedule 1</Name>
-      <Manual>
-        <SchedulerType>Global</SchedulerType>
-        <Global>
-          <Scheduling>
-            <IsDefaultScheduler>true</IsDefaultScheduler>
-            <DynamicScheduling>
-              <RampUp>
-                <StartCondition>
-                  <PrevAction />
-                </StartCondition>
-                <Batch>
-                  <Count>2</Count>
-                  <Interval>15</Interval>
-                </Batch>
-                <TotalVusersNumber>5</TotalVusersNumber>
-              </RampUp>
-              <Duration>
-                <StartCondition>
-                  <PrevAction />
-                </StartCondition>
-                <RunFor>120</RunFor>
-              </Duration>
-              <RampDownAll>
-                <StartCondition>
-                  <PrevAction />
-                </StartCondition>
-                <Batch>
-                  <Count>5</Count>
-                  <Interval>30</Interval>
-                </Batch>
-              </RampDownAll>
-            </DynamicScheduling>
-          </Scheduling>
-        </Global>
-        <Groups>
-          <InitAllBeforeStart>false</InitAllBeforeStart>
-          <GroupScheduler>
-            <GroupName>onebox_lt_scripts</GroupName>
-            <StartupMode>
-              <StartAtScenarioBegining />
-            </StartupMode>
-            <Scheduling>
-              <IsDefaultScheduler>true</IsDefaultScheduler>
-              <DynamicScheduling>
-                <RampUp>
-                  <StartCondition>
-                    <PrevAction />
-                  </StartCondition>
-                  <Batch>
-                    <Count>2</Count>
-                    <Interval>15</Interval>
-                  </Batch>
-                  <TotalVusersNumber>10</TotalVusersNumber>
-                </RampUp>
-                <Duration>
-                  <StartCondition>
-                    <PrevAction />
-                  </StartCondition>
-                  <RunFor>300</RunFor>
-                </Duration>
-                <RampDownAll>
-                  <StartCondition>
-                    <PrevAction />
-                  </StartCondition>
-                  <Batch>
-                    <Count>5</Count>
-                    <Interval>30</Interval>
-                  </Batch>
-                </RampDownAll>
-              </DynamicScheduling>
-            </Scheduling>
-          </GroupScheduler>
-        </Groups>
-      </Manual>
-    </Scheduler>
-  </Schedulers>
+<?xml version="1.0" encoding="utf-16"?>
+
+<LoadTest>
+
+  <Schedulers>
+
+    <CurrentSchedulerId>1</CurrentSchedulerId>
+
+    <StartMode>
+
+      <StartModeType>Immediately</StartModeType>
+
+      <StartModes>
+
+        <Immediately />
+
+        <DelayAfterLTStart>0</DelayAfterLTStart>
+
+        <StartAt>2016-07-13T09:48:32.4695637+05:30</StartAt>
+
+      </StartModes>
+
+    </StartMode>
+
+    <Scheduler ID="1">
+
+      <Name>Schedule 1</Name>
+
+      <Manual>
+
+        <SchedulerType>Global</SchedulerType>
+
+        <Global>
+
+          <Scheduling>
+
+            <IsDefaultScheduler>true</IsDefaultScheduler>
+
+            <DynamicScheduling>
+
+              <RampUp>
+
+                <StartCondition>
+
+                  <PrevAction />
+
+                </StartCondition>
+
+                <Batch>
+
+                  <Count>2</Count>
+
+                  <Interval>15</Interval>
+
+                </Batch>
+
+                <TotalVusersNumber>5</TotalVusersNumber>
+
+              </RampUp>
+
+              <Duration>
+
+                <StartCondition>
+
+                  <PrevAction />
+
+                </StartCondition>
+
+                <RunFor>120</RunFor>
+
+              </Duration>
+
+              <RampDownAll>
+
+                <StartCondition>
+
+                  <PrevAction />
+
+                </StartCondition>
+
+                <Batch>
+
+                  <Count>5</Count>
+
+                  <Interval>30</Interval>
+
+                </Batch>
+
+              </RampDownAll>
+
+            </DynamicScheduling>
+
+          </Scheduling>
+
+        </Global>
+
+        <Groups>
+
+          <InitAllBeforeStart>false</InitAllBeforeStart>
+
+          <GroupScheduler>
+
+            <GroupName>onebox_lt_scripts</GroupName>
+
+            <StartupMode>
+
+              <StartAtScenarioBegining />
+
+            </StartupMode>
+
+            <Scheduling>
+
+              <IsDefaultScheduler>true</IsDefaultScheduler>
+
+              <DynamicScheduling>
+
+                <RampUp>
+
+                  <StartCondition>
+
+                    <PrevAction />
+
+                  </StartCondition>
+
+                  <Batch>
+
+                    <Count>2</Count>
+
+                    <Interval>15</Interval>
+
+                  </Batch>
+
+                  <TotalVusersNumber>10</TotalVusersNumber>
+
+                </RampUp>
+
+                <Duration>
+
+                  <StartCondition>
+
+                    <PrevAction />
+
+                  </StartCondition>
+
+                  <RunFor>300</RunFor>
+
+                </Duration>
+
+                <RampDownAll>
+
+                  <StartCondition>
+
+                    <PrevAction />
+
+                  </StartCondition>
+
+                  <Batch>
+
+                    <Count>5</Count>
+
+                    <Interval>30</Interval>
+
+                  </Batch>
+
+                </RampDownAll>
+
+              </DynamicScheduling>
+
+            </Scheduling>
+
+          </GroupScheduler>
+
+        </Groups>
+
+      </Manual>
+
+    </Scheduler>
+
+  </Schedulers>
+
 </LoadTest>
 }
 
